@@ -1,12 +1,12 @@
 import { gql } from "apollo-server";
 
 export default gql`
-  type Todo {
-    task: String!
-    completed: Boolean!
+  type Author {
+    id: Int!
+    name: String!
+    books: [Book!]
   }
-
   extend type Query {
-    todos: [Todo]
+    authors: [Author!]
   }
 `;

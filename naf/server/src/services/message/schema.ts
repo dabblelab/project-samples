@@ -1,4 +1,4 @@
-import {gql} from "apollo-server";
+import { gql } from "apollo-server";
 
 export default gql`
   type Message {
@@ -9,4 +9,4 @@ export default gql`
   extend type Query {
     messages: [Message]
   }
-`
+`;
